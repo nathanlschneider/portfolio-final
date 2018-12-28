@@ -1,0 +1,11 @@
+.App {
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-rows: 100vh 100vh 50vh 200vh;
+}
+
+@media only screen and (max-width: 1300px) {
+    .App {
+        grid-template-columns: 50px auto 50px;
+    }
+}
