@@ -7,7 +7,6 @@ export default class Skills extends Component {
             <div className="skills">
                 <div className="skills-content">
                     <div className="skills-title">Skills</div>
-                    <div className="skills-title-line" />
                     <div className="skills-box box">
                         <div className="skills-box-title">Frontend</div>
                         <ul>

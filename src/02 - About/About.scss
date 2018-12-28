@@ -8,7 +8,7 @@
     .about-content {
         display: grid;
         grid-gap: 50px 50px;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr auto;
 
         .about-image {
             display: flex;
@@ -21,21 +21,17 @@
         }
 
         .about-text-container {
-            div {
+            .about-text-title {
                 font-size: var(--heading);
                 font-weight: 800;
                 color: var(--light);
+                overflow: hidden;
             }
 
-            p {
+            .about-text {
                 color: var(--medium);
                 font-size: calc(1vw + 0.5em);
                 font-weight: 300;
-            }
-            .about-line {
-                height: 3px;
-                width: 4em;
-                background-color: var(--light-blue);
             }
         }
     }
@@ -50,6 +46,62 @@
     .about-buttons {
         grid-column: 1/3;
         display: flex;
+        width: 100%;
         justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .about-content {
+        .about-wall {
+            background-image: url('../Shared/Images/bio.png');
+            background-size: contain;
+            position: absolute;
+            top: 100vh;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        grid-template-columns: 100vh;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0 0 !important;
+        .about-image {
+            display: none !important;
+        }
+
+        .about-text-container {
+            .about-text-title {
+                grid-row: 1 !important;
+            }
+
+            .about-text {
+                grid-row: 2 !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .about-content {
+        grid-template-rows: auto auto;
+        .about-text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .about-text-title {
+            }
+
+            .about-text {
+                text-align: center;
+            }
+        }
+    }
+    .about-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

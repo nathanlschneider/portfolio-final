@@ -19,10 +19,11 @@
         grid-template-rows: 0.5fr 1fr;
 
         .skills-title {
-            margin-top: 0.25em;
+            align-self: center;
             color: var(--light);
             font-size: var(--heading);
             font-weight: 800;
+            overflow: hidden;
 
             .skills-title-line {
                 background-color: var(--dark);

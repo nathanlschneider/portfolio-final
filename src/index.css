@@ -9,7 +9,7 @@
     --dark-blue: #0d85da;
     --light-blue: #57b0f1;
 
-    --heading: calc(4vw + 2em);
+    --heading: calc(4vmin + 2em);
 }
 
 * {

@@ -7,13 +7,14 @@ export default class About extends Component {
     render() {
         return (
             <div className="about">
+                <div className="about-wall" />
                 <div className="about-content">
                     <div className="about-image box">
                         <SVGComponent className="background-logo" width="250" height="250" />
                     </div>
                     <div className="about-text-container">
                         <div className="about-text-title">About Me</div>
-                        <div className="about-line" />
+                        <div className="aboutline" />
                         <p className="about-text">
                             {' '}
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
@@ -25,6 +26,7 @@ export default class About extends Component {
                     <div className="about-buttons">
                         <Btn value="Resume" />
                         <Btn value="LinkedIn" />
+
                         <Btn value="Github" />
                         <Btn value="Contact" color="medium" textColor="dark" />
                     </div>
