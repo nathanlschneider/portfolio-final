@@ -28,3 +28,7 @@ body {
 .background-logo {
     opacity: 0.3;
 }
+
+.no-flow {
+    overflow: hidden;
+}

@@ -1,52 +1,51 @@
 .skills {
-    grid-row: 3;
-    grid-column: 2/3;
-    .skills-wall {
-        background-color: var(--light-blue);
-        // background-image: url('../background.jpeg');
-        //background-size: cover;
-        // opacity: 0.2;
-        position: absolute;
-        top: 200vh;
-        left: 0;
-        width: 100%;
-        height: 75%;
-        z-index: -1;
-    }
-    .skills-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 1fr;
+    background-color: var(--light-blue);
 
-        .skills-title {
-            align-self: center;
-            color: var(--light);
-            font-size: var(--heading);
-            font-weight: 800;
-            overflow: hidden;
+    .skills-wrapper {
+        height: 75vh;
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            .skills-title-line {
-                background-color: var(--dark);
-                height: 3px;
-                width: 18em;
+        .skills-content {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: 5em auto;
+            grid-template-areas:
+                'skill-title skill-title skill-title'
+                'skill-box   skill-box   skill-box';
+
+            .skills-title {
+                grid-area: skill-title;
+                color: var(--light);
+                font-size: 10vmin;
+                font-weight: 800;
             }
-        }
 
-        .skills-box {
-            color: var(--medium);
-            width: 360px;
-            height: 360px;
-            background-color: var(--dark);
-            grid-row: 2;
-            font-weight: 200;
-            font-size: 24px;
-        }
+            .skills-box {
+                color: var(--medium);
+                background-color: var(--dark);
+                font-weight: 200;
+                height: 250px;
+                width: 300px;
+            }
 
-        .skills-box-title {
-            color: var(--light);
-            font-size: 2em;
-            font-weight: 400;
-            margin: 0.5em;
+            .skills-box-a {
+            }
+            .skills-box-b {
+            }
+            .skills-box-c {
+            }
+
+            .skills-box-title {
+                color: var(--light);
+                font-weight: 400;
+            }
         }
     }
 }
+
+//950 drop to veritcle

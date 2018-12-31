@@ -7,10 +7,10 @@ export default class Welcome extends Component {
         return (
             <div className="welcome">
                 <div className="welcome-content">
-                    <div className="welcome-title t1">Full Stack</div>
-                    <div className="welcome-title t2">Web Developer</div>
-                    <div className="t3">html css react js node</div>
-                    <Btn className="welcome-btn" value="Engage!" row="5" />
+                    <div className="welcome-title t1 no-flow">Full Stack</div>
+                    <div className="welcome-title t2 no-flow">Web Developer</div>
+                    <div className="t3 no-flow">html css react js node</div>
+                    <Btn className="welcome-btn" value="Welcome!" />
                 </div>
                 <div className="welcome-wall" />
             </div>
