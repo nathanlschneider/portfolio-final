@@ -10,7 +10,6 @@ export default class About extends Component {
             iconMode: false
         };
     }
-    componentDidMount() {}
     render() {
         return (
             <div className="about no-flow">

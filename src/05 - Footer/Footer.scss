@@ -1,0 +1,18 @@
+.footer {
+    margin-top: 50px;
+    width: 100vw;
+    height: 200px;
+    background-color: var(--light-blue);
+    color: var(--dark);
+
+    .footer-content {
+        max-width: 1200px;
+        font-size: 2vmin;
+        margin: auto;
+        font-weight: 300;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,5 +1,6 @@
 .skills {
     background-color: var(--light-blue);
+    background: linear-gradient(59deg, var(--dark-blue) 0%, var(--light-blue) 100%, rgba(252, 176, 69, 1) 100%);
 
     .skills-wrapper {
         height: 75vh;
@@ -12,40 +13,30 @@
         .skills-content {
             display: grid;
             grid-gap: 15px;
-            grid-template-columns: repeat(3, auto);
-            grid-template-rows: 5em auto;
-            grid-template-areas:
-                'skill-title skill-title skill-title'
-                'skill-box   skill-box   skill-box';
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: calc(8vmin + 1em) 1fr;
+            margin: 15px;
+            width: 100%;
 
             .skills-title {
-                grid-area: skill-title;
                 color: var(--light);
-                font-size: 10vmin;
+                font-size: calc(8vmin + 1em);
                 font-weight: 800;
-            }
-
-            .skills-box {
-                color: var(--medium);
-                background-color: var(--dark);
-                font-weight: 200;
-                height: 250px;
-                width: 300px;
-            }
-
-            .skills-box-a {
-            }
-            .skills-box-b {
-            }
-            .skills-box-c {
+                grid-column: 1 / span 2;
             }
 
             .skills-box-title {
                 color: var(--light);
                 font-weight: 400;
+                grid-row: 1;
+            }
+            .skills-box {
+                background-color: var(--dark);
+                color: var(--medium);
+                font-weight: 200;
+                grid-row: 2;
+                height: 300px;
             }
         }
     }
 }
-
-//950 drop to veritcle

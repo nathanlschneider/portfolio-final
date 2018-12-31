@@ -14,10 +14,11 @@ export default class Btn extends Component {
     }
 
     static defaultProps = {
-        value: 'Button',
         color: 'light-blue',
+        iconMode: false,
+        size: 'normal',
         textColor: 'light',
-        iconMode: false
+        value: 'Button'
     };
 
     imagePicker() {
@@ -37,6 +38,11 @@ export default class Btn extends Component {
         return (
             <button
                 style={this.props.iconMode ? { width: 75 + 'px' } : { width: 200 + 'px' }}
+                style={
+                    this.props.size === 'medium'
+                        ? { width: 150 + 'px', height: 45 + 'px', 'font-size': 18 + 'px' }
+                        : null
+                }
                 className={`main-button bg-${this.props.color} text-${this.props.textColor} ${this.props.className}`}
             >
                 {this.props.iconMode ? (
