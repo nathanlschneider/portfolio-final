@@ -1,5 +1,5 @@
 .projects {
-    height: 200vh;
+    height: 250vh;
     margin: auto;
     max-width: 1200px;
 
@@ -11,12 +11,12 @@
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
             'projects-title .'
-            'codepenA codepenB'
-            'codepenC codepenD'
             'githubA githubA '
             'githubB githubB'
             'githubC githubC'
-            'githubD githubD';
+            'githubD githubD'
+            'codepenA codepenB'
+            'codepenC codepenD';
 
         .projects-title {
             grid-area: projects-title;
@@ -28,6 +28,7 @@
 
         .projects-codepen-box {
             background-color: var(--medium);
+            height: 300px;
         }
 
         .codepen-a {

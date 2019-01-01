@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
+import Codepen from 'react-codepen-embed';
 import './Projects.scss';
 import Btn from '../Shared/Components/Btn';
 
 export default class Projects extends Component {
+    componentDidMount() {}
     render() {
         return (
             <div className="projects">
                 <div className="projects-content">
                     <div className="projects-title no-flow">Projects</div>
-                    <div className="projects-codepen-box box codepen-a" />
-                    <div className="projects-codepen-box box codepen-b" />
-                    <div className="projects-codepen-box box codepen-c" />
-                    <div className="projects-codepen-box box codepen-d" />
+                    <div className="projects-codepen-box box codepen-a">
+                        <Codepen hash="PxqYYQ" user="nathanlschneider" />
+                    </div>
+                    <div className="projects-codepen-box box codepen-b">
+                        <Codepen hash="zMpNOe" user="nathanlschneider" />
+                    </div>
+                    <div className="projects-codepen-box box codepen-c">
+                        <Codepen hash="YJmmpr" user="nathanlschneider" />
+                    </div>
+                    <div className="projects-codepen-box box codepen-d">
+                        <Codepen hash="YOpwed" user="nathanlschneider" />
+                    </div>
 
                     <div className="projects-github-box box github-a">
                         <div className="github-box-image box" />
