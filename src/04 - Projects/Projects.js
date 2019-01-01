@@ -10,7 +10,7 @@ export default class Projects extends Component {
             <div className="projects">
                 <div className="projects-content">
                     <div className="projects-title no-flow">Projects</div>
-                    <div className="projects-codepen-box box codepen-a">
+                    {/* <div className="projects-codepen-box box codepen-a">
                         <Codepen hash="PxqYYQ" user="nathanlschneider" />
                     </div>
                     <div className="projects-codepen-box box codepen-b">
@@ -21,61 +21,68 @@ export default class Projects extends Component {
                     </div>
                     <div className="projects-codepen-box box codepen-d">
                         <Codepen hash="YOpwed" user="nathanlschneider" />
-                    </div>
+                    </div> */}
 
                     <div className="projects-github-box box github-a">
                         <div className="github-box-image box" />
                         <Btn value="View Code" className="github-box-Btn github-btn-a" />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
-                        <div className="github-box-title no-flow">Name</div>
-                        <div className="github-box-sub-title">Subtext</div>
+                        <div className="github-box-title no-flow">pm2Mon</div>
+                        <div className="github-box-sub-title">Web GUI for pm2</div>
                         <div className="github-box-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
-                            consectetur corrupti quasi nam! Veritatis dicta ut ratione facilis repudiandae voluptatum
-                            non exercitationem, quaerat, maiores quo eligendi hic ad vero enim accusamus quod tempore
-                            molestias sunt earum!
+                            This is a simple Web GUI for the pm2 Node process monitor. It's currently using vanilla
+                            HTML/CSS/JS, along with Node and Express to poll and server data. I plan on redoing this in
+                            React.
                         </div>
                     </div>
                     <div className="projects-github-box box github-b">
                         <div className="github-box-image box" />
                         <Btn value="View Code" className="github-box-Btn github-btn-a" />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
-                        <div className="github-box-title no-flow">Name</div>
-                        <div className="github-box-sub-title">Subtext</div>
+                        <div className="github-box-title no-flow">Cradlepoint Watcher</div>
+                        <div className="github-box-sub-title">Realtime LTE Monitor</div>
                         <div className="github-box-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
-                            consectetur corrupti quasi nam! Veritatis dicta ut ratione facilis repudiandae voluptatum
-                            non exercitationem, quaerat, maiores quo eligendi hic ad vero enim accusamus quod tempore
-                            molestias sunt earum!
+                            This App monitors the WAN/LTE status of several hundred Cradlepoint Wifi Routers deployed at
+                            Wendy's locations across the country. It uses React to display devices currently on LTE on a
+                            dashboard in the IT deparment of the Franchisee. It uses Node, Express, Websockets and
+                            MoongoDB on the backend to poll Cradlepoint API data and to update and server the React
+                            dashboard. We've been able to save thousands of dollars from monitoring the connections.
                         </div>
                     </div>
                     <div className="projects-github-box box github-c">
                         <div className="github-box-image box" />
                         <Btn value="View Code" className="github-box-Btn github-btn-a" />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
-                        <div className="github-box-title no-flow">Name</div>
-                        <div className="github-box-sub-title">Subtext</div>
+                        <div className="github-box-title no-flow">Ticket Viewer</div>
+                        <div className="github-box-sub-title">IvantiSM Ticket Viewer Web App</div>
                         <div className="github-box-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
-                            consectetur corrupti quasi nam! Veritatis dicta ut ratione facilis repudiandae voluptatum
-                            non exercitationem, quaerat, maiores quo eligendi hic ad vero enim accusamus quod tempore
-                            molestias sunt earum!
+                            IvantiSM is an ITIL Service Manage application that is in use at my current employeer and is
+                            used mainly for the IT Help Desk ticketing system. This Web App was built so company
+                            operation and management can easily find incident tickets while in the field via their
+                            mobile devices. This was written in vanilla HTML/CSS/JS and has PWA functionality, and uses
+                            the IvantiSM API to communicate with the system.
                         </div>
                     </div>
                     <div className="projects-github-box box github-d">
                         <div className="github-box-image box" />
                         <Btn value="View Code" className="github-box-Btn github-btn-a" />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
-                        <div className="github-box-title no-flow">Name</div>
-                        <div className="github-box-sub-title">Subtext</div>
+                        <div className="github-box-title no-flow">Portfolio</div>
+                        <div className="github-box-sub-title">My Web Portfolio!</div>
                         <div className="github-box-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
-                            consectetur corrupti quasi nam! Veritatis dicta ut ratione facilis repudiandae voluptatum
-                            non exercitationem, quaerat, maiores quo eligendi hic ad vero enim accusamus quod tempore
-                            molestias sunt earum!
+                            Here is the code the the site you are currently looking at. It was built using React, and
+                            uses Node to server the content.
                         </div>
                     </div>
                 </div>
+                <svg
+                    className="svg-divider-b"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                >
+                    <polygon fill="var(--light-blue)" points="55,0 65,100 75,0" />
+                </svg>
             </div>
         );
     }

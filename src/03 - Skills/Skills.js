@@ -46,6 +46,14 @@ export default class Skills extends Component {
                         </div>
                     </div>
                 </div>
+                <svg
+                    className="svg-divider-a"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                    preserveAspectRatio="none"
+                >
+                    <polygon fill="var(--dark)" points="55,0 65,100 75,0" />
+                </svg>
             </div>
         );
     }

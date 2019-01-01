@@ -1,7 +1,7 @@
 .about {
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 75vh;
     justify-content: center;
     margin: auto;
     max-width: 1200px;
@@ -23,10 +23,10 @@
         display: grid;
         grid-gap: 15px;
         grid-template-areas:
-            '. image image title  title  .'
-            '. image image text   text   .'
-            '. image image button button .';
-        grid-template-columns: repeat(6, auto);
+            'image image title  title'
+            'image image text   text'
+            'image image button button';
+        grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(3, auto);
         margin: auto;
         max-width: 100%;
@@ -44,7 +44,8 @@
 
         .about-text-title {
             color: var(--light);
-            font-size: 10vmin;
+            font-size: calc(8vmin + 1em);
+
             font-weight: 800;
             grid-area: title;
         }

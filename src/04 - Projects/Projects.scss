@@ -1,29 +1,31 @@
 .projects {
-    height: 250vh;
-    margin: auto;
-    max-width: 1200px;
+    height: 175vh;
+    // background: linear-gradient(180deg, var(--light-blue) 0%, var(--dark) 100%);
 
     .projects-content {
+        margin: auto;
+        max-width: 1200px;
         height: 100%;
         display: grid;
         grid-gap: 15px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: 0.75fr repeat(4, 1fr);
         grid-template-areas:
             'projects-title .'
             'githubA githubA '
             'githubB githubB'
             'githubC githubC'
-            'githubD githubD'
-            'codepenA codepenB'
-            'codepenC codepenD';
+            'githubD githubD';
+        // 'codepenA codepenB'
+        // 'codepenC codepenD';
 
         .projects-title {
             grid-area: projects-title;
-            font-size: 10vmin;
+            font-size: calc(8vmin + 1em);
+
             color: var(--light);
             font-weight: 800;
-            align-self: center;
+            align-self: end;
         }
 
         .projects-codepen-box {
@@ -53,8 +55,8 @@
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(4, 1fr);
             grid-template-areas:
-                'gh-image gh-image gh-name . . .'
-                'gh-image gh-image gh-subtitle . . .'
+                'gh-image gh-image gh-name gh-name gh-name gh-name'
+                'gh-image gh-image gh-subtitle gh-subtitle  gh-subtitle  gh-subtitle '
                 'gh-image gh-image gh-text gh-text gh-text gh-text'
                 'gh-btnA  gh-btnB  gh-text gh-text gh-text gh-text';
 
@@ -102,4 +104,10 @@
             grid-area: githubD;
         }
     }
+}
+.svg-divider-b {
+    position: absolute;
+    top: 250vh;
+    width: 100%;
+    height: 5vw;
 }
