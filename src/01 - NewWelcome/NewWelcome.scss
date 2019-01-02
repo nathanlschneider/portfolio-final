@@ -1,0 +1,43 @@
+.welcome {
+    background-color: var(--light-blue);
+    height: 100vh;
+    position: relative;
+
+    .welcome-content {
+        margin: auto;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .welcome-name {
+        color: var(--light);
+        font-weight: 800;
+        font-size: 10vmin;
+    }
+
+    .welcome-title {
+        color: var(--dark);
+        font-weight: 300;
+        font-size: 5vmin;
+    }
+
+    .welcome-footer {
+        position: absolute;
+        bottom: 0;
+        height: 5vw;
+        width: 100%;
+        background-color: var(--dark);
+    }
+    .svg-divider-welcome {
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        height: 5vw;
+        z-index: 2;
+        /* set height to pixels if you want angle to change with screen width */
+    }
+}

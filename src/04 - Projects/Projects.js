@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Codepen from 'react-codepen-embed';
+// import Codepen from 'react-codepen-embed';
 import './Projects.scss';
 import Btn from '../Shared/Components/Btn';
 

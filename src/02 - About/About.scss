@@ -1,14 +1,13 @@
 .about {
     align-items: center;
     display: flex;
-    height: 75vh;
     justify-content: center;
     margin: auto;
     max-width: 1200px;
-
+    min-height: 75vh;
     .about-wall {
         // background-image: url('../Shared/Images/bio.png');
-        background-position: 50%;
+        background-position: 55%;
         background-size: cover;
         height: 100vh;
         left: 0;
@@ -23,10 +22,10 @@
         display: grid;
         grid-gap: 15px;
         grid-template-areas:
-            'image image title  title'
-            'image image text   text'
-            'image image button button';
-        grid-template-columns: repeat(4, auto);
+            '. image image title  title .'
+            '. image image text   text .'
+            '. image image button button .';
+        grid-template-columns: repeat(6, auto);
         grid-template-rows: repeat(3, auto);
         margin: auto;
         max-width: 100%;
@@ -66,3 +65,33 @@
 }
 
 //820 to chaneg buttons to icon mode
+
+@media screen and (max-width: 830px) {
+    .about {
+        min-height: 85vh;
+        .about-wall {
+            background-image: url('../Shared/Images/bio.png');
+        }
+        .about-content {
+            grid-gap: 10px 10px;
+            grid-template-columns: auto 1fr auto;
+        }
+        .about-image {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .about-text-title {
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+        margin: 25px 75px 25px 75px !important;
+    }
+    .about-btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

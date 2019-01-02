@@ -9,11 +9,6 @@ export default class Nav extends Component {
                 <div className="nav-content">
                     <div className="nav-logo">
                         <SVGComponent className="nav-svg" height="55" width="55" />
-                        <div className="nav-line" />
-                        <div className="nav-name">
-                            <div className="nav-name-first">Nathan</div>
-                            <div className="nav-name-last">Schneider</div>
-                        </div>
                     </div>
                     <div className="nav-menu">
                         <div className="nav-item">About</div>

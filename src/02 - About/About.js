@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './About.scss';
 import Btn from '../Shared/Components/Btn';
-import SVGComponent from '../Shared/Components/SVG';
 
 export default class About extends Component {
     constructor(props) {
@@ -10,15 +9,19 @@ export default class About extends Component {
             iconMode: false
         };
     }
+
+    componentDidMount() {
+        window.addEventListener('resize', e => {
+            window.innerWidth < 500 ? this.setState({ iconMode: true }) : this.setState({ iconMode: false });
+        });
+    }
+
     render() {
         return (
             <div className="about no-flow">
                 <div className="about-wall" />
                 <div className="about-content">
-                    <div className="about-image box">
-                        {/* <SVGComponent className="background-logo" width="250" height="250" /> */}
-                    </div>
-
+                    <div className="about-image box" />
                     <div className="about-text-title no-flow">About Me</div>
                     <div className="about-text no-flow">
                         {' '}
