@@ -23,6 +23,11 @@
         color: var(--dark);
         font-weight: 300;
         font-size: 5vmin;
+        position: relative;
+    }
+
+    .welcome-call-to-action {
+        margin: 10px 0 0 -5px;
     }
 
     .welcome-footer {
