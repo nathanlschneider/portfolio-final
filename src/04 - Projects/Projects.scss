@@ -12,7 +12,7 @@
         display: grid;
         grid-gap: 15px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 250px repeat(4, 1fr);
+        grid-template-rows: 100px repeat(4, 1fr);
         grid-template-areas:
             'projects-title .'
             'githubA githubA '
@@ -24,7 +24,7 @@
 
         .projects-title {
             grid-area: projects-title;
-            font-size: calc(8vmin + 1em);
+            font-size:11vmin;
             overflow: hidden;
             color: var(--light);
             font-weight: 800;

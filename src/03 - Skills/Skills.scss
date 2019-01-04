@@ -27,14 +27,14 @@
             }
 
             .skills-box {
-                font-size: calc(1vmin + 1em);
+                font-size: 24px;
                 color: var(--dark);
                 font-weight: 300;
                 grid-row: 2;
 
                 .skills-box-title {
                     color: var(--light);
-                    font-size: calc(2vmin + 1em);
+                    font-size: 32px;
                     font-weight: 400;
                 }
             }
@@ -61,9 +61,48 @@
     /* set height to pixels if you want angle to change with screen width */
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     .skills-content {
-        
-        grid-template-columns: 20px repeat(3, 150px) !important;
-    }
+       
+        grid-template-rows: 50px repeat(3, 100px) !important;
+        grid-template-columns: 20px 1fr 40px !important;
+
+        .skills-title {
+            color: var(--light);
+            font-size: calc(8vmin + 1em);
+            font-weight: 800;
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .skills-box-a {
+            grid-row: 2;
+        }
+        .skills-box-b {
+            grid-column: 2 !important;
+            grid-row: 3 !important;
+        }
+        .skills-box-c {
+            grid-column: 2 !important;
+
+            grid-row: 4 !important;
+        }
+        .skills-box {
+            font-size: 18px !important;
+            color: var(--dark);
+            font-weight: 300;
+            grid-column: 2;
+           
+           
+            li {
+                display: inline !important;
+                margin: 4px;
+            }
+
+            .skills-box-title {
+                color: var(--light);
+                font-size: 22px !important;
+                font-weight: 400;
+            }
+        }
+}
 }
