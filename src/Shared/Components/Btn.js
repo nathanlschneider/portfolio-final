@@ -9,8 +9,9 @@ export default class Btn extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: null
+            url: null
         };
+        this.handleClick = this.handleClick.bind(this);
     }
 
     static defaultProps = {
@@ -18,9 +19,12 @@ export default class Btn extends Component {
         iconMode: false,
         size: 'normal',
         textColor: 'light',
-        value: 'Button'
+        value: 'Button',
+        url: null
     };
-
+    handleClick(event) {
+        window.open(this.state.url, '_blank');
+    }
     imagePicker() {
         if (this.props.value === 'Github') {
             return Github;
@@ -34,15 +38,16 @@ export default class Btn extends Component {
             return this.props.value;
         }
     }
+
+    componentDidMount() {
+        this.setState({ url: this.props.url });
+    }
+
     render() {
         return (
             <button
+                onClick={this.handleClick}
                 style={this.props.iconMode ? { width: 75 + 'px' } : { width: 200 + 'px' }}
-                style={
-                    this.props.size === 'medium'
-                        ? { width: 150 + 'px', height: 45 + 'px', 'font-size': 18 + 'px' }
-                        : null
-                }
                 className={`main-button bg-${this.props.color} text-${this.props.textColor} ${this.props.className}`}
             >
                 {this.props.iconMode ? (

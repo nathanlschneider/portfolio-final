@@ -24,8 +24,12 @@ export default class Projects extends Component {
                     </div> */}
 
                     <div className="projects-github-box box github-a">
-                        <div className="github-box-image box" />
-                        <Btn value="View Code" className="github-box-Btn github-btn-a" />
+                        <div className="github-box-image-a box" />
+                        <Btn
+                            value="View Code"
+                            className="github-box-Btn github-btn-a"
+                            url="https://github.com/nathanlschneider/pm2Mon"
+                        />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">pm2Mon</div>
                         <div className="github-box-sub-title">Web GUI for pm2</div>
@@ -36,27 +40,35 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div className="projects-github-box box github-b">
-                        <div className="github-box-image box" />
-                        <Btn value="View Code" className="github-box-Btn github-btn-a" />
+                        <div className="github-box-image-b box" />
+                        <Btn
+                            value="View Code"
+                            className="github-box-Btn github-btn-a"
+                            url="https://github.com/nathanlschneider/react-cradlepoint_watcher"
+                        />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Cradlepoint Watcher</div>
-                        <div className="github-box-sub-title">Realtime LTE Monitor</div>
+                        <div className="github-box-sub-title">Real-time LTE Monitor</div>
                         <div className="github-box-text">
-                            This App monitors the WAN/LTE status of several hundred Cradlepoint Wifi Routers deployed at
-                            Wendy's locations across the country. It uses React to display devices currently on LTE on a
-                            dashboard in the IT deparment of the Franchisee. It uses Node, Express, Websockets and
-                            MoongoDB on the backend to poll Cradlepoint API data and to update and server the React
-                            dashboard. We've been able to save thousands of dollars from monitoring the connections.
+                            This App monitors the WAN/LTE status of several hundred Cradlepoint WIFI Routers deployed at
+                            Wendy's locations across the country. It uses React to display devices on LTE on a dashboard
+                            in the IT Department of the Franchisee. It uses Node, Express, Web Sockets, and MongoDB on
+                            the backend to poll Cradlepoint API data and to update and server the React dashboard. We've
+                            been able to save thousands of dollars from monitoring the connections.
                         </div>
                     </div>
                     <div className="projects-github-box box github-c">
-                        <div className="github-box-image box" />
-                        <Btn value="View Code" className="github-box-Btn github-btn-a" />
+                        <div className="github-box-image-c box" />
+                        <Btn
+                            value="View Code"
+                            className="github-box-Btn github-btn-a"
+                            url="https://github.com/nathanlschneider/ticket_viewer"
+                        />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Ticket Viewer</div>
                         <div className="github-box-sub-title">IvantiSM Ticket Viewer Web App</div>
                         <div className="github-box-text">
-                            IvantiSM is an ITIL Service Manage application that is in use at my current employeer and is
+                            IvantiSM is an ITIL Service Manager application that is in use at my current employer and is
                             used mainly for the IT Help Desk ticketing system. This Web App was built so company
                             operation and management can easily find incident tickets while in the field via their
                             mobile devices. This was written in vanilla HTML/CSS/JS and has PWA functionality, and uses
@@ -64,8 +76,12 @@ export default class Projects extends Component {
                         </div>
                     </div>
                     <div className="projects-github-box box github-d">
-                        <div className="github-box-image box" />
-                        <Btn value="View Code" className="github-box-Btn github-btn-a" />
+                        <div className="github-box-image-d box" />
+                        <Btn
+                            value="View Code"
+                            className="github-box-Btn github-btn-a"
+                            url="https://github.com/nathanlschneider/portfolio-final"
+                        />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Portfolio</div>
                         <div className="github-box-sub-title">My Web Portfolio!</div>

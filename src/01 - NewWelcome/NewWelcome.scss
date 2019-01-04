@@ -3,7 +3,7 @@
     height: 100vh;
     position: relative;
 
-    .welcome-content {
+    &-content {
         margin: auto;
         max-width: 1200px;
         display: flex;
@@ -11,26 +11,22 @@
         justify-content: center;
         height: 100%;
         padding: 10px;
+
+        &-name {
+            color: var(--light);
+            font-weight: 800;
+            font-size: 10vmin;
+        }
+
+        &-title {
+            color: var(--dark);
+            font-weight: 300;
+            font-size: 5vmin;
+            position: relative;
+        }
     }
 
-    .welcome-name {
-        color: var(--light);
-        font-weight: 800;
-        font-size: 10vmin;
-    }
-
-    .welcome-title {
-        color: var(--dark);
-        font-weight: 300;
-        font-size: 5vmin;
-        position: relative;
-    }
-
-    .welcome-call-to-action {
-        margin: 10px 0 0 -5px;
-    }
-
-    .welcome-footer {
+    &-footer {
         position: absolute;
         bottom: 0;
         height: 5vw;

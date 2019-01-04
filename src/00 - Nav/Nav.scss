@@ -13,12 +13,21 @@
         height: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         &-logo {
             z-index: 11;
         }
+        &-title {
+            color: var(--light);
+            font-size: 24px;
+            margin: -2px -10px 0 0;
+
+            @include mover;
+        }
+
         &-btn {
+            cursor: pointer;
             margin: 20px;
             height: 25px;
             border-radius: 100%;

@@ -64,8 +64,33 @@
                 'gh-btnA  gh-btnB  gh-text gh-text gh-text gh-text';
 
             .github-box-image {
+                background-color: var(--medium-dark) !important;
                 grid-area: gh-image;
-                background-color: var(--medium-dark);
+                &-a {
+                    background-image: url('../Shared/Images/mockup4.jpg');
+                    background-position: 50% 30%;
+                    background-size: cover;
+                    grid-area: gh-image;
+                }
+
+                &-b {
+                    background-image: url('../Shared/Images/mockup2.jpg');
+                    background-position: 50% 30%;
+                    background-size: cover;
+                    grid-area: gh-image;
+                }
+                &-c {
+                    background-image: url('../Shared/Images/mockup3.jpg');
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    grid-area: gh-image;
+                }
+                &-d {
+                    // background-image: url('../Shared/Images/mockup2.jpg');
+                    background-position: 50% 50%;
+                    background-size: cover;
+                    grid-area: gh-image;
+                }
             }
             .github-box-Btn {
             }
