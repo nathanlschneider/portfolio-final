@@ -25,10 +25,11 @@ export default class About extends Component {
                     <div className="about-text-title no-flow">About Me</div>
                     <div className="about-text no-flow">
                         {' '}
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam dolorum repellendus
-                        consectetur corrupti quasi nam! Veritatis dicta ut ratione facilis repudiandae voluptatum non
-                        exercitationem, quaerat, maiores quo eligendi hic ad vero enim accusamus quod tempore molestias
-                        sunt earum!
+                        I'm a developer with a lifelong passion for learning, creating, technology and the arts. From
+                        playing guitar and writing music to coding and building computers, my interests encompass a wide
+                        range of areas. From my studies in media production, systems administration and computer
+                        programming, paired with my drive to learn and create, makes me a great fit for my current
+                        passion for Web Development.
                     </div>
                     <div className="about-btn-container">
                         <Btn value="Resume" iconMode={this.state.iconMode} className="" />

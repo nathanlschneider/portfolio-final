@@ -73,9 +73,12 @@
             background-image: url('../Shared/Images/bio.png');
         }
         .about-content {
-            grid-gap: 0 0 !important;
-            grid-template-columns: auto 1fr auto;
-            margin: 0 15px 0 15px;
+            grid-template-areas:
+                '. title  title .'
+                '. text   text .'
+                '. button button .';
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(3, auto);
         }
         .about-image {
             display: none;
@@ -99,7 +102,7 @@
             margin: 25px 75px 25px 75px !important;
         }
         .about-btn-container {
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
         }
     }
