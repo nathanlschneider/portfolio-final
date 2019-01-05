@@ -18,7 +18,7 @@ export default class About extends Component {
 
     render() {
         return (
-            <div className="about no-flow">
+            <div id="About" className="about no-flow">
                 <div className="about-wall" />
                 <div className="about-content">
                     <div className="about-image box" />

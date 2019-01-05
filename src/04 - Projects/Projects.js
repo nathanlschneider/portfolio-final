@@ -7,7 +7,7 @@ export default class Projects extends Component {
     componentDidMount() {}
     render() {
         return (
-            <div className="projects">
+            <div id="Projects" className="projects">
                 <div className="projects-content">
                     <div className="projects-title no-flow">Projects</div>
                     {/* <div className="projects-codepen-box box codepen-a">
