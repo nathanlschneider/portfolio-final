@@ -51,7 +51,7 @@
 
         .about-text {
             color: var(--medium);
-            font-size: 3vmin;
+            font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1200 - 300)));
             font-weight: 300;
             grid-area: text;
         }
@@ -70,7 +70,7 @@
     .about {
         min-height: 85vh;
         .about-wall {
-            // background-image: url('../Shared/Images/bio.png');
+            background-image: url('../Shared/Images/bio.png');
         }
         .about-content {
             grid-gap: 0 0 !important;

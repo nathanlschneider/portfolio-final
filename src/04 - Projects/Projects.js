@@ -10,19 +10,6 @@ export default class Projects extends Component {
             <div id="Projects" className="projects">
                 <div className="projects-content">
                     <div className="projects-title no-flow">Projects</div>
-                    {/* <div className="projects-codepen-box box codepen-a">
-                        <Codepen hash="PxqYYQ" user="nathanlschneider" />
-                    </div>
-                    <div className="projects-codepen-box box codepen-b">
-                        <Codepen hash="zMpNOe" user="nathanlschneider" />
-                    </div>
-                    <div className="projects-codepen-box box codepen-c">
-                        <Codepen hash="YJmmpr" user="nathanlschneider" />
-                    </div>
-                    <div className="projects-codepen-box box codepen-d">
-                        <Codepen hash="YOpwed" user="nathanlschneider" />
-                    </div> */}
-
                     <div className="projects-github-box box github-a">
                         <div className="github-box-image-a box" />
                         <Btn
@@ -32,7 +19,7 @@ export default class Projects extends Component {
                         />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">pm2Mon</div>
-                        <div className="github-box-sub-title">Web GUI for pm2</div>
+                        <div className="github-box-sub-title">Web GUI</div>
                         <div className="github-box-text">
                             This is a simple Web GUI for the pm2 Node process monitor. It's currently using vanilla
                             HTML/CSS/JS, along with Node and Express to poll and server data. I plan on redoing this in
@@ -48,13 +35,11 @@ export default class Projects extends Component {
                         />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Cradlepoint Watcher</div>
-                        <div className="github-box-sub-title">Real-time LTE Monitor</div>
+                        <div className="github-box-sub-title">LTE Monitor</div>
                         <div className="github-box-text">
                             This App monitors the WAN/LTE status of several hundred Cradlepoint WIFI Routers deployed at
-                            Wendy's locations across the country. It uses React to display devices on LTE on a dashboard
-                            in the IT Department of the Franchisee. It uses Node, Express, Web Sockets, and MongoDB on
-                            the backend to poll Cradlepoint API data and to update and server the React dashboard. We've
-                            been able to save thousands of dollars from monitoring the connections.
+                            Wendy's locations across the country. It uses React on the frontend and Node, Express, Web
+                            Sockets, and MongoDB on the backend.
                         </div>
                     </div>
                     <div className="projects-github-box box github-c">
@@ -66,13 +51,10 @@ export default class Projects extends Component {
                         />
                         <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Ticket Viewer</div>
-                        <div className="github-box-sub-title">IvantiSM Ticket Viewer Web App</div>
+                        <div className="github-box-sub-title">IvantiSM Web App</div>
                         <div className="github-box-text">
-                            IvantiSM is an ITIL Service Manager application that is in use at my current employer and is
-                            used mainly for the IT Help Desk ticketing system. This Web App was built so company
-                            operation and management can easily find incident tickets while in the field via their
-                            mobile devices. This was written in vanilla HTML/CSS/JS and has PWA functionality, and uses
-                            the IvantiSM API to communicate with the system.
+                            This is a companion app for IvantiSM to view Help Desk incident tickets on mobile devices.
+                            It was written with vanilla HTML/CSS/JS. It's currently being used by a Wendy's Franchisee.
                         </div>
                     </div>
                     <div className="projects-github-box box github-d">

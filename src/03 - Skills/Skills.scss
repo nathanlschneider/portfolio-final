@@ -27,14 +27,13 @@
             }
 
             .skills-box {
-                font-size: 24px;
                 color: var(--dark);
                 font-weight: 300;
                 grid-row: 2;
-
+                font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1200 - 300)));
                 .skills-box-title {
                     color: var(--light);
-                    font-size: 32px;
+                    font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1200 - 300)));
                     font-weight: 400;
                 }
             }
@@ -61,9 +60,8 @@
     /* set height to pixels if you want angle to change with screen width */
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     .skills-content {
-       
         grid-template-rows: 50px repeat(3, 100px) !important;
         grid-template-columns: 20px 1fr 40px !important;
 
@@ -91,8 +89,7 @@
             color: var(--dark);
             font-weight: 300;
             grid-column: 2;
-           
-           
+
             li {
                 display: inline !important;
                 margin: 4px;
@@ -104,5 +101,5 @@
                 font-weight: 400;
             }
         }
-}
+    }
 }

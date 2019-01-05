@@ -1,7 +1,9 @@
 .projects {
     min-height: 150vh;
     position: relative;
-    // background: linear-gradient(180deg, var(--light-blue) 0%, var(--dark) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .projects-content {
         padding: 10px;
@@ -12,41 +14,21 @@
         display: grid;
         grid-gap: 15px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px repeat(4, 1fr);
+        grid-template-rows: 0.75fr repeat(4, 1fr);
         grid-template-areas:
             'projects-title .'
             'githubA githubA '
             'githubB githubB'
             'githubC githubC'
             'githubD githubD';
-        // 'codepenA codepenB'
-        // 'codepenC codepenD';
 
         .projects-title {
             grid-area: projects-title;
-            font-size:11vmin;
+            font-size: 11vmin;
             overflow: hidden;
             color: var(--light);
             font-weight: 800;
             align-self: end;
-        }
-
-        .projects-codepen-box {
-            background-color: var(--medium);
-            height: 300px;
-        }
-
-        .codepen-a {
-            grid-area: codepenA;
-        }
-        .codepen-b {
-            grid-area: codepenB;
-        }
-        .codepen-c {
-            grid-area: codepenC;
-        }
-        .codepen-d {
-            grid-area: codepenD;
         }
 
         .projects-github-box {
@@ -92,8 +74,6 @@
                     grid-area: gh-image;
                 }
             }
-            .github-box-Btn {
-            }
 
             .github-btn-a {
                 grid-area: gh-btnA;
@@ -104,7 +84,7 @@
             }
             .github-box-title {
                 grid-area: gh-name;
-                font-size: 56px;
+                font-size: 52px;
                 font-weight: 700;
             }
             .github-box-sub-title {
@@ -113,7 +93,7 @@
                 font-weight: 300;
             }
             .github-box-text {
-                font-size: 18px;
+                font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1200 - 300)));
                 font-weight: 100;
                 grid-area: gh-text;
             }
@@ -140,71 +120,91 @@
     height: 5vw;
 }
 
-@media screen and (max-width: 800px){
-    .projects-github-box {
-        display: grid;
-        grid-gap: 10px;
-        padding: 20px;
-        height: auto !important;
-        background-color: var(--medium);
-        grid-template-columns: repeat(2, auto) !important;
-        grid-template-rows: repeat(8, 50px) !important;
-        grid-template-areas:
-            'gh-image gh-image'
-            'gh-image gh-image'
-            'gh-image gh-image' 
-            'gh-name  gh-name'
-            'gh-subtitle gh-subtitle'
-            'gh-text  gh-text'
-            'gh-text  gh-text'
-            'gh-btnA gh-btnB' !important;
-}
-.github-btn-a {
-    align-self: center;
-    justify-self: center;
-    grid-area: gh-btnA;
-}
+@media screen and (max-width: 800px) {
+    .projects-content {
+        grid-template-rows: 0.4fr repeat(4, 1fr) !important;
 
-.github-btn-b {
-    align-self: center;
+        .projects-github-box {
+            display: grid;
+            grid-gap: 10px;
+            padding: 20px;
+            height: auto !important;
+            background-color: var(--medium);
+            grid-template-columns: repeat(2, auto) !important;
+            grid-template-rows: repeat(8, 50px) !important;
+            grid-template-areas:
+                'gh-image gh-image'
+                'gh-image gh-image'
+                'gh-image gh-image'
+                'gh-name  gh-name'
+                'gh-subtitle gh-subtitle'
+                'gh-text  gh-text'
+                'gh-text  gh-text'
+                'gh-btnA gh-btnB' !important;
+        }
+        .github-btn-a {
+            align-self: center;
+            justify-self: center;
+            grid-area: gh-btnA;
+        }
 
-    justify-self: center;
+        .github-btn-b {
+            align-self: center;
 
-    grid-area: gh-btnB;
+            justify-self: center;
+
+            grid-area: gh-btnB;
+        }
+    }
 }
-}
+@media screen and (max-width: 475px) {
+    .projects-content {
+        grid-template-rows: 0.2fr repeat(4, 1fr) !important;
 
-@media screen and (max-width: 475px){
-    .projects-github-box {
-        display: grid;
-        grid-gap: 10px;
-        padding: 20px;
-        height: auto !important;
-        background-color: var(--medium);
-        grid-template-columns: repeat(1, auto) !important;
-        grid-template-rows: repeat(8, 50px) !important;
-        grid-template-areas:
-            'gh-image'
-            'gh-image'
-            'gh-image' 
-            'gh-name'
-            'gh-subtitle'
-            'gh-text'
-            'gh-text'
-            'gh-btnA'
-            'gh-btnB' !important;
-}
-.github-btn-a {
-    align-self: center;
-    justify-self: center;
-    grid-area: gh-btnA;
-}
+        .projects-github-box {
+            display: grid;
+            grid-gap: 10px;
+            padding: 20px;
+            height: auto !important;
+            background-color: var(--medium);
+            grid-template-columns: repeat(1, auto) !important;
+            grid-template-rows: repeat(5, 50px) 150px auto auto 50px !important;
+            grid-template-areas:
+                'gh-image'
+                'gh-image'
+                'gh-image'
+                'gh-name'
+                'gh-subtitle'
+                'gh-text'
+                'gh-text'
+                'gh-btnA'
+                'gh-btnB' !important;
+        }
+        .github-box-title {
+            grid-area: gh-name;
+            // font-size: 36px !important;
+            font-weight: 700;
+        }
+        .github-box-sub-title {
+            grid-area: gh-subtitle;
+            // font-size: 26px !important;
+            font-weight: 300;
+        }
+        .github-box-text {
+            // font-size: 16px !important;
+            font-weight: 100;
+            grid-area: gh-text;
+        }
+        .github-btn-a {
+            align-self: center;
+            justify-self: center;
+            grid-area: gh-btnA;
+        }
 
-.github-btn-b {
-    align-self: center;
-
-    justify-self: center;
-
-    grid-area: gh-btnB;
-}
+        .github-btn-b {
+            align-self: center;
+            justify-self: center;
+            grid-area: gh-btnB;
+        }
+    }
 }
