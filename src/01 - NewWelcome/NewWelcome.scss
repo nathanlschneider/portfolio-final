@@ -42,3 +42,11 @@
         /* set height to pixels if you want angle to change with screen width */
     }
 }
+
+@media screen and (max-width: 830px) {
+    .welcome {
+        &-footer {
+            background-color: #363633;
+        }
+    }
+}

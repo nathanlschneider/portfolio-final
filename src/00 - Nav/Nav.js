@@ -19,10 +19,15 @@ export default class Nav extends Component {
     }
 
     componentDidMount() {
-        window.addEventListener('scroll', e => {
-            window.scrollY < 725
-                ? this.setState({ displayMenuTitle: true })
-                : this.setState({ displayMenuTitle: false });
+        let menuTitle = window.document.querySelector('.nav-content-title');
+        let menuBtn = window.document.querySelector('.nav-content-btn');
+
+        menuBtn.addEventListener('mouseover', e => {
+            menuTitle.style.opacity = 1;
+        });
+
+        menuBtn.addEventListener('mouseout', e => {
+            menuTitle.style.opacity = 0;
         });
     }
     render() {
@@ -30,10 +35,7 @@ export default class Nav extends Component {
             <div className="nav">
                 <div className="nav-content">
                     <div className="nav-content-logo" />
-                    <div
-                        className="nav-content-title"
-                        style={this.state.displayMenuTitle ? { opacity: 1 } : { opacity: 0 }}
-                    >
+                    <div className="nav-content-title" style={{ opacity: 0 }}>
                         Menu
                     </div>
                     <div className="nav-content-btn" onClick={this.handleMenuClick} />
