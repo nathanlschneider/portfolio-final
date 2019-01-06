@@ -84,12 +84,12 @@
             }
             .github-box-title {
                 grid-area: gh-name;
-                font-size: 52px;
+                font-size: calc(28px + (38 - 28) * ((100vw - 300px) / (1200 - 300))); //8vmin; //52px;
                 font-weight: 700;
             }
             .github-box-sub-title {
                 grid-area: gh-subtitle;
-                font-size: 36px;
+                font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1200 - 300))); //6vmin; //36px;
                 font-weight: 300;
             }
             .github-box-text {
@@ -150,9 +150,7 @@
 
         .github-btn-b {
             align-self: center;
-
             justify-self: center;
-
             grid-area: gh-btnB;
         }
     }
@@ -168,7 +166,7 @@
             height: auto !important;
             background-color: var(--medium);
             grid-template-columns: repeat(1, auto) !important;
-            grid-template-rows: repeat(5, 50px) 150px auto auto 50px !important;
+            grid-template-rows: repeat(3, 50px) repeat(5, auto) 50px !important;
             grid-template-areas:
                 'gh-image'
                 'gh-image'
