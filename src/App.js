@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Loader from './Shared/Components/Loader/Loader';
 import Nav from './00 - Nav/Nav';
 import Welcome from './01 - NewWelcome/NewWelcome';
 import About from './02 - About/About';
@@ -11,6 +12,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Loader />
                 <Nav />
                 <Welcome />
                 <About />

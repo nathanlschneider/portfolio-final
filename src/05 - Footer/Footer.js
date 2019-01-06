@@ -7,7 +7,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <div className="footer-content">
-                    <SVGComponent width="100" height="100" />
+                    <SVGComponent fill="var(--medium)" width="75" height="75" />
                     <div className="footer-text">Code and Design by Nathan Schneider</div>
                     {/* <div className="footer-text">Contact me via email </div> */}
                     <div className="footer-text">

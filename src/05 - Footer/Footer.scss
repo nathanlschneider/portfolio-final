@@ -1,30 +1,29 @@
 .footer {
-    position: relative;
-    margin-top: 50px;
-    width: 100vw;
-    height: 200px;
     background-color: var(--light-blue);
     color: var(--dark);
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+    width: 100vw;
 
     .footer-content {
-        max-width: 1200px;
-        font-size: 2vmin;
-        margin: auto;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1200 - 300)));
         font-weight: 300;
         height: 100%;
-        display: flex;
         justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
+        margin: auto;
+        max-width: 1200px;
         padding: 20px;
     }
 }
 
 .svg-divider-c {
+    height: 5vw;
     position: absolute;
     top: -1px;
     width: 100%;
-    height: 5vw;
     z-index: 1;
-    /* set height to pixels if you want angle to change with screen width */
 }
