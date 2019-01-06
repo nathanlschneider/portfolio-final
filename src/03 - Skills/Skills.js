@@ -9,40 +9,44 @@ export default class Skills extends Component {
                     <div className="skills-content">
                         <div className="skills-title no-flow">Skills</div>
                         <div className="skills-box skills-box-a">
-                            <ul>
-                                <li className="skills-box-title">Frontend</li>
-                                <li>HTML</li>
-                                <li>CSS/SCSS</li>
-                                <li>JS/ES5/ES6</li>
-                                <li>React</li>
-                                <li>Bootstrap</li>
-                                <li>Grid</li>
-                                <li>Flexbox</li>
-                            </ul>
+                            <div className="skills-box-title">Frontend</div>
+                            <div>Bootstrap</div>
+                            <div>CSS/SCSS</div>
+                            <div>Flexbox</div>
+                            <div>Grid</div>
+                            <div>HTML</div>
+                            <div>JS/ES5/ES6</div>
+                            <div>React</div>
                         </div>
                         <div className="skills-box skills-box-b">
-                            <ul>
-                                <li className="skills-box-title">Backend</li>
-                                <li>Node</li>
-                                <li>Express</li>
-                                <li>Websocket</li>
-                                <li>REST</li>
-                                <li>.NET</li>
-                                <li>MongoDB</li>
-                                <li>Linux</li>
-                            </ul>
+                            <div className="skills-box-title">Backend</div>
+                            <div>Express</div>
+                            <div>Linux</div>
+                            <div>MongoDB</div>
+                            <div>Node</div>
+                            <div>REST</div>
+                            <div>VB.NET</div>
+                            <div>SQL</div>
                         </div>
                         <div className="skills-box skills-box-c">
-                            <ul>
-                                <li className="skills-box-title">Tools</li>
-                                <li>VS Code</li>
-                                <li>NPM</li>
-                                <li>Git</li>
-                                <li>Gimp</li>
-                                <li>Figma</li>
-                                <li>Tert</li>
-                                <li>Flexbox</li>
-                            </ul>
+                            <div className="skills-box-title">Tools</div>
+                            <div>Figma</div>
+                            <div>Gimp</div>
+                            <div>Git</div>
+                            <div>Github</div>
+                            <div>Google</div>
+                            <div>NPM</div>
+                            <div>VS Code</div>
+                        </div>
+                        <div className="skills-box skills-box-d">
+                            <div className="skills-box-title">Systems</div>
+                            <div>Active Directory</div>
+                            <div>IIS</div>
+                            <div>Linux</div>
+                            <div>Networking</div>
+                            <div>Server Admin</div>
+                            <div>SSH</div>
+                            <div>Windows</div>
                         </div>
                     </div>
                 </div>

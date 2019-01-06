@@ -8,7 +8,7 @@
         margin: auto;
         max-width: 1200px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
 
@@ -16,7 +16,8 @@
             width: 100%;
             display: grid;
             grid-template-rows: auto 1fr;
-            grid-template-columns: 20px repeat(3, 270px);
+            grid-template-columns: 20px repeat(4, 1fr) 20px;
+            justify-items: center;
 
             .skills-title {
                 color: var(--light);
@@ -30,7 +31,7 @@
                 color: var(--dark);
                 font-weight: 300;
                 grid-row: 2;
-                font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1200 - 300)));
+                font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1200 - 300)));
                 .skills-box-title {
                     color: var(--light);
                     font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1200 - 300)));
@@ -47,6 +48,9 @@
             .skills-box-c {
                 grid-column: 4;
             }
+            .skills-box-d {
+                grid-column: 5;
+            }
         }
     }
 }
@@ -60,45 +64,40 @@
     /* set height to pixels if you want angle to change with screen width */
 }
 
-@media screen and (max-width: 800px) {
-    .skills-content {
-        grid-template-rows: 50px repeat(3, 100px) !important;
-        grid-template-columns: 20px 1fr 40px !important;
+@media screen and (max-width: 500px) {
+    .skills {
+        .skills-wrapper {
+            .skills-content {
+                grid-gap: 20px 0;
+                grid-template-rows: auto 1fr 1fr;
+                grid-template-columns: 20px repeat(2, 1fr) 20px;
+                justify-items: left;
 
-        .skills-title {
-            color: var(--light);
-            font-size: calc(8vmin + 1em);
-            font-weight: 800;
-            grid-row: 1;
-            grid-column: 2;
-        }
-        .skills-box-a {
-            grid-row: 2;
-        }
-        .skills-box-b {
-            grid-column: 2 !important;
-            grid-row: 3 !important;
-        }
-        .skills-box-c {
-            grid-column: 2 !important;
+                .skills-title {
+                    grid-row: 1;
+                    grid-column: 2;
+                }
 
-            grid-row: 4 !important;
-        }
-        .skills-box {
-            font-size: 18px !important;
-            color: var(--dark);
-            font-weight: 300;
-            grid-column: 2;
+                .skills-box {
+                    grid-row: 2;
+                    // .skills-box-title {
+                    // }
+                }
 
-            li {
-                display: inline !important;
-                margin: 4px;
-            }
-
-            .skills-box-title {
-                color: var(--light);
-                font-size: 22px !important;
-                font-weight: 400;
+                .skills-box-a {
+                    grid-column: 2;
+                }
+                .skills-box-b {
+                    grid-column: 3;
+                }
+                .skills-box-c {
+                    grid-column: 2;
+                    grid-row: 3;
+                }
+                .skills-box-d {
+                    grid-column: 3;
+                    grid-row: 3;
+                }
             }
         }
     }
