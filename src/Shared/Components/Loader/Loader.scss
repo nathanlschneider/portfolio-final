@@ -27,7 +27,7 @@
         &-bar {
             background-color: var(--light-blue);
             width: 1px;
-            height: 10px;
+            height: 15px;
         }
     }
 }
@@ -43,7 +43,7 @@
     }
 
     100% {
-        width: 175px;
+        width: 200px;
     }
 }
 
@@ -75,7 +75,7 @@
     }
 
     75% {
-        border: 100px solid var(--light-blue);
+        border: 175px solid var(--light-blue);
     }
     100% {
         opacity: 0;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SVGComponent from '../Shared/Components/SVG';
+import SVGComponent from '../Shared/Components/Logo/Logo';
 import './Nav.scss';
 
 export default class Nav extends Component {

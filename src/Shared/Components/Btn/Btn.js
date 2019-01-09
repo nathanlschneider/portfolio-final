@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Btn.scss';
-import Github from './Github.svg';
-import Linkedin from './Linkedin.svg';
-import Contact from './Contact.svg';
-import Resume from './Resume.png';
+import Github from '../../Images/Github.svg';
+import Linkedin from '../../Images/Linkedin.svg';
+import Contact from '../../Images/Contact.svg';
+import Resume from '../../Images/Resume.png';
 
 export default class Btn extends Component {
     constructor(props) {

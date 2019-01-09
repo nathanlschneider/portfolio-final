@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SVGComponent from '../Shared/Components/SVG';
+import SVGComponent from '../Shared/Components/Logo/Logo';
 import './Footer.scss';
 
 export default class Footer extends Component {
@@ -7,7 +7,7 @@ export default class Footer extends Component {
         return (
             <div className="footer">
                 <div className="footer-content">
-                    <SVGComponent fill="var(--medium)" width="75" height="75" />
+                    <SVGComponent fill="var(--medium)" width="45" height="45" />
                     <div className="footer-text">Code and Design by Nathan Schneider</div>
                     {/* <div className="footer-text">Contact me via email </div> */}
                     <div className="footer-text">

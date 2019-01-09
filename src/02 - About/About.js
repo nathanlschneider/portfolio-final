@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './About.scss';
-import Btn from '../Shared/Components/Btn';
+import Btn from '../Shared/Components/Btn/Btn';
 
 export default class About extends Component {
     constructor(props) {
@@ -8,11 +8,17 @@ export default class About extends Component {
         this.state = {
             iconMode: false
         };
+        this.checkWidth = this.checkWidth.bind(this);
     }
 
+    checkWidth() {
+        window.innerWidth < 500 ? this.setState({ iconMode: true }) : this.setState({ iconMode: false });
+    }
     componentDidMount() {
+        this.checkWidth();
+
         window.addEventListener('resize', e => {
-            window.innerWidth < 500 ? this.setState({ iconMode: true }) : this.setState({ iconMode: false });
+            this.checkWidth();
         });
     }
 
@@ -26,10 +32,11 @@ export default class About extends Component {
                     <div className="about-text no-flow">
                         {' '}
                         I'm a developer with a lifelong passion for learning, creating, technology and the arts. From
-                        playing guitar and writing music to coding and building computers, my interests encompass a wide
-                        range of areas. From my studies in media production, systems administration and computer
-                        programming, paired with my drive to learn and create, makes me a great fit for my current
-                        passion for Web Development.
+                        playing the guitar and performing music, to coding, building computers or wrenching on my car,
+                        my interests encompass a wide range of areas. Growing up I was the type of kid that needed to
+                        take everything apart to see how it worked. As an adult, that still holds true. Getting the
+                        opportunity to learn new skills and deep dive into how things work is what I love and is
+                        something I enjoy in my spare time and in my career.
                     </div>
                     <div className="about-btn-container">
                         <Btn value="Resume" iconMode={this.state.iconMode} className="" />

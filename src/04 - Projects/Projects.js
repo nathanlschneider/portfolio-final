@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Codepen from 'react-codepen-embed';
 import './Projects.scss';
-import Btn from '../Shared/Components/Btn';
+import Btn from '../Shared/Components/Btn/Btn';
 
 export default class Projects extends Component {
     componentDidMount() {}

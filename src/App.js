@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Loader from './Shared/Components/Loader/Loader';
 import Nav from './00 - Nav/Nav';
-import Welcome from './01 - NewWelcome/NewWelcome';
+import Welcome from './01 - Welcome/Welcome';
 import About from './02 - About/About';
 import Skills from './03 - Skills/Skills';
 import Projects from './04 - Projects/Projects';

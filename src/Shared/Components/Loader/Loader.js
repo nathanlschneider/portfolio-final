@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SVGComponent from '../SVG';
+import SVGComponent from '../Logo/Logo';
 import './Loader.scss';
 
 export default class Loader extends Component {
@@ -16,9 +16,7 @@ export default class Loader extends Component {
         return (
             <div className="loader">
                 <div className="loader-content">
-                    <div className="loader-content-logo">
-                        <SVGComponent fill="#eeeeee" width="200" height="200" />
-                    </div>
+                    <div className="loader-content-logo">Loading</div>
                     <div className="loader-content-bar" />
                 </div>
             </div>
