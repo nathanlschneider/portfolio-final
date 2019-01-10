@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SVGComponent from '../Shared/Components/Logo/Logo';
 
 import './Welcome.scss';
 
@@ -9,7 +8,6 @@ export default class Welcome extends Component {
         return (
             <div className="welcome no-flow">
                 <div className="welcome-content no-flow">
-                    {/* <SVGComponent className="welcome-content-svg" fill="var(--light)" width="25" /> */}
                     <div className="welcome-content-name no-flow">Nathan Schneider</div>
                     <div className="welcome-content-title no-flow">Full Stack Web Developer</div>
                 </div>

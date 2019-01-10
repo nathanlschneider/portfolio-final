@@ -16,7 +16,9 @@ export default class Loader extends Component {
         return (
             <div className="loader">
                 <div className="loader-content">
-                    <div className="loader-content-logo">Loading</div>
+                    <div className="loader-content-logo">
+                        <SVGComponent fill="#eeeeee" width="125" height="125" />
+                    </div>
                     <div className="loader-content-bar" />
                 </div>
             </div>
