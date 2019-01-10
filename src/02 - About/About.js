@@ -39,12 +39,17 @@ export default class About extends Component {
                         something I enjoy in my spare time and in my career.
                     </div>
                     <div className="about-btn-container">
-                        <Btn value="Resume" iconMode={this.state.iconMode} className="" />
+                        <Btn
+                            value="Resume"
+                            iconMode={this.state.iconMode}
+                            className=""
+                            url="../Shared/nschneider_resume.pdf"
+                        />
                         <Btn
                             value="LinkedIn"
                             iconMode={this.state.iconMode}
                             className=""
-                            url="https://www.linkedin.com/in/nathan-schneider-59b6a836/"
+                            url="https://www.linkedin.com/in/nathanlschneider"
                         />
                         <Btn
                             value="Github"

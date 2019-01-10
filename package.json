@@ -8,6 +8,7 @@
     "react-codepen-embed": "^0.1.0",
     "react-div-100vh": "^0.3.2",
     "react-dom": "^16.7.0",
+    "react-player": "^1.8.0",
     "react-scripts": "2.1.2"
   },
   "scripts": {
