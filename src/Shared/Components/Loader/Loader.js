@@ -10,7 +10,7 @@ export default class Loader extends Component {
         loadLogo.classList.add('progress-bar');
         setTimeout(() => {
             loader.remove();
-        }, 2100);
+        }, 3100);
     }
     render() {
         return (
