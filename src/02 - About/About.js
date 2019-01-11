@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './About.scss';
 import Btn from '../Shared/Components/Btn/Btn';
-import Resume from '../Shared/nschneider_resume.pdf';
+import Resume from '../Shared/nathan_schneider_resume.pdf';
 
 export default class About extends Component {
     constructor(props) {
