@@ -10,43 +10,51 @@ export default class Skills extends Component {
                         <div className="skills-title no-flow">Skills</div>
                         <div className="skills-box skills-box-a">
                             <div className="skills-box-title">Frontend</div>
-                            <div>Bootstrap</div>
+                            <div>AJAX</div>
                             <div>CSS/SCSS</div>
                             <div>Flexbox</div>
+                            <div>Frameworks</div>
                             <div>Grid</div>
                             <div>HTML</div>
-                            <div>JS/ES5/ES6</div>
+                            <div>Javascript</div>
                             <div>React</div>
+                            <div>Responsive Design</div>
                         </div>
                         <div className="skills-box skills-box-b">
                             <div className="skills-box-title">Backend</div>
                             <div>Express</div>
-                            <div>Linux</div>
+                            <div>Integrations</div>
+                            <div>JSON</div>
                             <div>MongoDB</div>
                             <div>Node</div>
-                            <div>REST</div>
+                            <div>RESTful Services</div>
+                            <div>SQL/MySQL</div>
                             <div>VB.NET</div>
-                            <div>SQL</div>
+                            <div>XML</div>
                         </div>
                         <div className="skills-box skills-box-c">
                             <div className="skills-box-title">Tools</div>
+                            <div>Agile</div>
+                            <div>Browser Dev Tools</div>
                             <div>Figma</div>
                             <div>Gimp</div>
                             <div>Git</div>
                             <div>Github</div>
-                            <div>Google</div>
                             <div>NPM</div>
                             <div>VS Code</div>
+                            <div>Visual Studio</div>
                         </div>
                         <div className="skills-box skills-box-d">
                             <div className="skills-box-title">Systems</div>
-                            <div>Active Directory</div>
                             <div>IIS</div>
                             <div>Linux</div>
                             <div>Networking</div>
+                            <div>Security</div>
                             <div>Server Admin</div>
-                            <div>SSH</div>
+                            <div>VM</div>
                             <div>Windows</div>
+                            <div>Workday</div>
+                            <div>IvantiSM</div>
                         </div>
                     </div>
                 </div>
