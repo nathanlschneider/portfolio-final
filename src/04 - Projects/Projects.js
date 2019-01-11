@@ -49,7 +49,7 @@ export default class Projects extends Component {
                             className="github-box-Btn github-btn-a"
                             url="https://github.com/nathanlschneider/ticket_viewer"
                         />
-                        <Btn value="Demo" className="github-box-Btn github-btn-b" />
+                        <Btn value="Demo" className="github-box-Btn github-btn-b" url={TicketViewerVideo} />
                         <div className="github-box-title no-flow">Ticket Viewer</div>
                         <div className="github-box-sub-title">IvantiSM Web App</div>
                         <div className="github-box-text">
@@ -64,7 +64,7 @@ export default class Projects extends Component {
                             className="github-box-Btn github-btn-a"
                             url="https://github.com/nathanlschneider/portfolio-final"
                         />
-                        <Btn value="Demo" className="github-box-Btn github-btn-b" url={TicketViewerVideo} />
+                        <Btn value="Demo" className="github-box-Btn github-btn-b" />
                         <div className="github-box-title no-flow">Portfolio</div>
                         <div className="github-box-sub-title">My Web Portfolio!</div>
                         <div className="github-box-text">
