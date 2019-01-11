@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './About.scss';
 import Btn from '../Shared/Components/Btn/Btn';
+import Resume from '../Shared/nschneider_resume.pdf';
 
 export default class About extends Component {
     constructor(props) {
@@ -39,12 +40,7 @@ export default class About extends Component {
                         something I enjoy in my spare time and in my career.
                     </div>
                     <div className="about-btn-container">
-                        <Btn
-                            value="Resume"
-                            iconMode={this.state.iconMode}
-                            className=""
-                            url="../Shared/nschneider_resume.pdf"
-                        />
+                        <Btn value="Resume" iconMode={this.state.iconMode} className="" url={Resume} />
                         <Btn
                             value="LinkedIn"
                             iconMode={this.state.iconMode}

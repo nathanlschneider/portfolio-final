@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Projects.scss';
 import Btn from '../Shared/Components/Btn/Btn';
+import TicketViewerVideo from '../Shared/ticketviewer.mp4';
 
 export default class Projects extends Component {
     componentDidMount() {}
@@ -63,7 +64,7 @@ export default class Projects extends Component {
                             className="github-box-Btn github-btn-a"
                             url="https://github.com/nathanlschneider/portfolio-final"
                         />
-                        <Btn value="Demo" className="github-box-Btn github-btn-b" />
+                        <Btn value="Demo" className="github-box-Btn github-btn-b" url={TicketViewerVideo} />
                         <div className="github-box-title no-flow">Portfolio</div>
                         <div className="github-box-sub-title">My Web Portfolio!</div>
                         <div className="github-box-text">
