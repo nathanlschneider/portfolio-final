@@ -17,7 +17,7 @@ export default class Projects extends Component {
                             className="github-box-Btn github-btn-a"
                             url="https://github.com/nathanlschneider/pm2Mon"
                         />
-                        <Btn value="Demo" className="github-box-Btn github-btn-b" />
+                        <Btn value="Demo" className="github-box-Btn github-btn-b" url="http://nschneider.info:8989/" />
                         <div className="github-box-title no-flow">pm2Mon</div>
                         <div className="github-box-sub-title">Web GUI</div>
                         <div className="github-box-text">
