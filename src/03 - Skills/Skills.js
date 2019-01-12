@@ -10,10 +10,8 @@ export default class Skills extends Component {
                         <div className="skills-title no-flow">Skills</div>
                         <div className="skills-box skills-box-a">
                             <div className="skills-box-title">Frontend</div>
-                            <div>AJAX</div>
                             <div>CSS/SCSS</div>
                             <div>Flexbox</div>
-                            <div>Frameworks</div>
                             <div>Grid</div>
                             <div>HTML</div>
                             <div>Javascript</div>
@@ -23,14 +21,12 @@ export default class Skills extends Component {
                         <div className="skills-box skills-box-b">
                             <div className="skills-box-title">Backend</div>
                             <div>Express</div>
-                            <div>Integrations</div>
                             <div>JSON</div>
                             <div>MongoDB</div>
                             <div>Node</div>
                             <div>RESTful Services</div>
                             <div>SQL/MySQL</div>
                             <div>VB.NET</div>
-                            <div>XML</div>
                         </div>
                         <div className="skills-box skills-box-c">
                             <div className="skills-box-title">Tools</div>
@@ -42,7 +38,6 @@ export default class Skills extends Component {
                             <div>Github</div>
                             <div>NPM</div>
                             <div>VS Code</div>
-                            <div>Visual Studio</div>
                         </div>
                         <div className="skills-box skills-box-d">
                             <div className="skills-box-title">Systems</div>
@@ -53,8 +48,6 @@ export default class Skills extends Component {
                             <div>Server Admin</div>
                             <div>VM</div>
                             <div>Windows</div>
-                            <div>Workday</div>
-                            <div>IvantiSM</div>
                         </div>
                     </div>
                 </div>
