@@ -30,7 +30,6 @@ export default class Skills extends Component {
                         </div>
                         <div className="skills-box skills-box-c">
                             <div className="skills-box-title">Tools</div>
-                            <div>Agile</div>
                             <div>Browser Dev Tools</div>
                             <div>Figma</div>
                             <div>Gimp</div>
