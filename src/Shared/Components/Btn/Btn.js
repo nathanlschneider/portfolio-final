@@ -25,19 +25,6 @@ export default class Btn extends Component {
     handleClick(event) {
         window.open(this.state.url, '_blank');
     }
-    imagePicker() {
-        if (this.props.value === 'Github') {
-            return Github;
-        } else if (this.props.value === 'LinkedIn') {
-            return Linkedin;
-        } else if (this.props.value === 'Contact') {
-            return Contact;
-        } else if (this.props.value === 'Resume') {
-            return Resume;
-        } else {
-            return this.props.value;
-        }
-    }
 
     componentDidMount() {
         this.setState({ url: this.props.url });
@@ -51,10 +38,17 @@ export default class Btn extends Component {
                 className={`main-button bg-${this.props.color} text-${this.props.textColor} ${this.props.className}`}
             >
                 {this.props.iconMode ? (
-                    <img src={this.imagePicker()} height="44px" width="44px" alt={this.props.value} />
+                    <img src={
+                        this.props.value === 'Github' ? Github
+                            : this.props.value === 'LinkedIn' ? Linkedin
+                                : this.props.value === 'Contact' ? Contact
+                                    : this.props.value === 'Resume' ? Resume
+                                        : this.props.value
+                    }
+                        height="44px" width="44px" alt={this.props.value} />
                 ) : (
-                    this.props.value
-                )}
+                        this.props.value
+                    )}
             </button>
         );
     }
